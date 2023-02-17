@@ -37,9 +37,8 @@ const SignUp = () => {
       const db = getFirestore(app);
       const dbRef = collection(db, "users");
       const data = {
-        name: "Ottawa",
-        country: "Canada",
-        province: "ON"
+      email:input.email,
+      password:input.password
      };
 
      addDoc(dbRef, data)
